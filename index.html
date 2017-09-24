@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recent Earthquakes</title>
+    <link rel="stylesheet" href="./styles.css"/>
+
+    <!-- Earthquake Service reusable file -->
+    <script type="text/javascript" src="./js/earthquakesService.js"></script>
+
+    <!-- Google Maps reusable file -->
+    <script type="text/javascript" src="./js/googleMaps.js"></script>
+
+    <!-- Controller file (contains the initGoogleMap() callback function) -->
+    <script type="text/javascript" src="./js/controller.js"></script>
+
+    <!-- Google APIs (Google Maps) -->
+    <script type="text/javascript" defer async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCShsMKMNNVKwEV3Mfse1u6f2gYzEQKYR0&callback=initGoogleMap"></script>
+</head>
+<body>
+
+    <h1>Earthquakes (Last 24 hours)</h1>
+
+    <div id="earthquakeMap"></div>
+
+    <div id="earthquakeDetailsContainer">
+        <h2>More Information</h2>
+        <div id="earthquakeLocationDetails">
+            Please click on an Earthquake's marker and callout
+        </div>
+    </div>
+
+</body>
+</html>

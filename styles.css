@@ -1,0 +1,50 @@
+/*
+ * ==== STYLES.CSS ====
+ * Mobile-first stylesheet for the Earthquakes display.
+ */
+
+#earthquakeMap {
+    width: 100%;
+    height: 500px;
+}
+
+#earthquakeDetailsContainer {
+    width: 100%;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #868080;
+}
+
+#earthquakeLocationDetails {
+    padding: 0 1em;
+    color: #4e4d4d;
+}
+
+#earthquakeLocationDetails ul {
+    list-style-type: none;
+}
+
+#earthquakeLocationDetails ul .label {
+    font-weight: bold;
+}
+
+#earthquakeLocationDetails ul li {
+    padding-bottom: 1em;
+}
+
+/*
+ * Styles for non-mobile devices:
+ */
+@media only screen and (min-width: 768px) {
+    #earthquakeMap {
+        width: 60%;
+        float: left;
+    }
+
+    #earthquakeDetailsContainer {
+        width: 40%;
+        float: left;
+    }
+}
